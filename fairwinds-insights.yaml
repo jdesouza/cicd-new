@@ -1,4 +1,5 @@
 options:
+  setExitCode: true
   organization: cicd-hands-on-lab
   hostname: https://staging.insights.fairwinds.com
   baseBranch: main
@@ -6,3 +7,7 @@ options:
 images:
   docker:
     - alpine:3.14.0
+
+manifests:
+  yaml:
+  - deploy.yaml
